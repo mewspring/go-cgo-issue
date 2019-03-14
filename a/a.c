@@ -4,8 +4,6 @@
 
 int a1() {
 	printf("a1\n");
-	printf("   argv: %s\n", Args());
-	printf("   envp: %s\n", Environ());
-	printf("   exe:  %s\n", Executable());
+	printf("   args: %s\n", Args());
 	return 0;
 }
