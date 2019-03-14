@@ -24,3 +24,10 @@ b1
 c1
 fatal error: cgo callback before cgo call
 ```
+
+The crash is present on both Go 1.12, and master.
+
+```
+$ go version
+go version devel +04f1b65cc6 Wed Mar 13 15:11:37 2019 +0000 linux/amd64
+```
