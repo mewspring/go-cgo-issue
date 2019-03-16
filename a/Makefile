@@ -1,10 +1,10 @@
 all: a.so
 
 a.so: a.c go-a.a
-	clang -m32 -shared -o $@ $^ -lpthread
+	clang -shared -o $@ $^ -lpthread
 
 go-a.a: go-a.go
-	CGO_ENABLED=1 GOOS=linux GOARCH=386 go build -buildmode=c-archive -o $@ $<
+	CGO_ENABLED=1 go build -buildmode=c-archive -o $@ $<
 
 .PHONY: all clean
 
