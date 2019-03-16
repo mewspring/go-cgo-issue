@@ -1,9 +1,10 @@
-#include <stdio.h>
+//#include <stdio.h>
 
 #include "go-a.h"
 
-int a1() {
-	printf("a1\n");
-	printf("   args: %s\n", Args());
-	return 0;
+char * a1() {
+	//printf("a1\n");
+	char *s = Args();
+	//printf("   args: %s\n", s);
+	return s;
 }
